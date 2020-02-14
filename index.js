@@ -5,7 +5,7 @@ const line = require('@line/bot-sdk');
 // Bot用情報
 const config = {
   channelSecret: "ce0539b7447dd2c330125e82c17cc091",
-  channelAccessToken: "weRdq/Fj0XidMa5rulN79Gl9gbrn3/Is5+SkeGTObd9abV8IezTqOj1dZ0N+Ee7zm8ko1pbKFrHnKm02LpyrFditod8NnUqQkcaMd8MfERTH68C+lCZlwF9Q/+AZp2WKP2l0ICNwBvuAChmIFeOYzAdB04t89/1O/w1cDnyilFU=",
+  channelAccessToken: "Z4FGS9+Xyezf0ZukhL83iZn3ciVColl12uJkPp1sNzc13NJSjrMhY9LGI0ncpDrVm8ko1pbKFrHnKm02LpyrFditod8NnUqQkcaMd8MfERRTmgyJ/PyxiJBlQlWJBczpnbGgTkBkrlwCnvwGt4TXQgdB04t89/1O/w1cDnyilFU=",
 };
 const client = new line.Client(config);
 // LINE Botからのアクセスの一次処理。
@@ -27,7 +27,7 @@ function handleEvent(event) {
   }
   // ユーザーからBotにテキストが送られた場合のみ以下が実行される
   // メッセージを構築
-  const echo = { type: 'text', text: "こんにちは" };
+  const echo = { type: 'text', text: "今日はバレンタインデーですね。" };
   // 返信
   return client.replyMessage(event.replyToken, echo);
 }
