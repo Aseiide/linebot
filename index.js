@@ -4,8 +4,8 @@ const app = express();
 const line = require('@line/bot-sdk');
 // Bot用情報
 const config = {
-  channelSecret: "ce0539b7447dd2c330125e82c17cc091",
-  channelAccessToken: "Z4FGS9+Xyezf0ZukhL83iZn3ciVColl12uJkPp1sNzc13NJSjrMhY9LGI0ncpDrVm8ko1pbKFrHnKm02LpyrFditod8NnUqQkcaMd8MfERRTmgyJ/PyxiJBlQlWJBczpnbGgTkBkrlwCnvwGt4TXQgdB04t89/1O/w1cDnyilFU=",
+  channelSecret: "channelSecret",
+  channelAccessToken: "channelAccessToken",
 };
 const client = new line.Client(config);
 const util = require('util'); // ☆追加
